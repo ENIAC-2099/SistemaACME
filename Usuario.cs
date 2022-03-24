@@ -28,24 +28,22 @@ namespace SistemaACME
             return peso / (altura*altura);
         }
 
-        /*
+        
         public float CalcularMeta()
         {
            
-            float meta = peso - imc;
-            return meta;
+            float peso = imc/(altura * altura);
+            return peso;
         }
-        */
+        
 
         public void DescricaoIMC()
         {
             //Calcular IMC do Usuário
             float imc = CalcularImc();
-            
 
-            float meta = peso-imc;
-            Math.Sqrt(meta);
-
+            float meta = CalcularMeta();
+           
 
             Console.WriteLine($"Seu IMC atual é {imc}.");
 
