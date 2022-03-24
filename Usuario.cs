@@ -25,7 +25,7 @@ namespace SistemaACME
 
         public float CalcularImc()
         {
-            return peso / (altura)
+            return peso / (altura*altura);
         }
 
         /*
