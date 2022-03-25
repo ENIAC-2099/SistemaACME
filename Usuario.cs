@@ -31,7 +31,7 @@ namespace SistemaACME
         
         public float CalcularMeta()
         {
-           
+            float imc = CalcularImc();
             float peso = imc/(altura * altura);
             return peso;
         }
@@ -50,27 +50,27 @@ namespace SistemaACME
             //Condição
             if (imc >= 18.2 & imc <= 24.9)
             {
-                Console.WriteLine("Parabens você está com seu peso normal");
+                Console.WriteLine("Parabens você está com seu peso normal Kg");
             }
             if (imc >= 25.0 & imc <= 29.9)
             {
                 Console.WriteLine("Você está acima do seu peso.");
-                Console.WriteLine($"META: Você precisa emagrecer{meta}");
+                Console.WriteLine($"META: Você precisa emagrecer {meta} Kg");
             }
             if (imc >= 30.0 & imc <= 34.9)
             {
                 Console.WriteLine("Obesidade Grau 1");
-                Console.WriteLine($"META: Você precisa emagrecer{meta}");
+                Console.WriteLine($"META: Você precisa emagrecer {meta} Kg");
             }
             if (imc >= 35.0 & imc <= 40)
             {
                 Console.WriteLine("Obesidade Grau 2");
-                Console.WriteLine($"META: Você precisa emagrecer{meta}");
+                Console.WriteLine($"META: Você precisa emagrecer {meta} Kg");
             }
             if (imc >= 40.0)
             {
                 Console.WriteLine("Obesidade Grau 3 e 4.");
-                Console.WriteLine($"META: Você precisa emagrecer{meta}");
+                Console.WriteLine($"META: Você precisa emagrecer {meta} Kg");
             }
         }
     }
