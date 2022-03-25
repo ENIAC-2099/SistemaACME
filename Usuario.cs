@@ -41,7 +41,6 @@ namespace SistemaACME
         {
             //Calcular IMC do Usuário
             float imc = CalcularImc();
-
             float meta = CalcularMeta();
            
 
